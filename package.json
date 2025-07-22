@@ -1,0 +1,15 @@
+{
+  "name": "vietnamese-spam-detection-model",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@gradio/client": "^1.15.6"
+  }
+}
