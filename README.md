@@ -11,6 +11,9 @@ The website contains minimal features since I only want to deploy my model. Howe
 - **Detection**: This is the main purpose of the model, it takes `Vietnamese-only` input and return output
 - **Language**: A dropdown menu to change between English - Vietnamese
 
+## Model parameters
+
+*Will be updated later...*
 
 ## How it works
 - The form sends user input to a backend API route (`/api/predict`) via AJAX.
@@ -83,3 +86,9 @@ or follow the steps below:
 2. Connect the repo to Vercel (https://vercel.com/import).
 3. Vercel will auto-detect the API route in `api/predict.js` and serve `index.html` as a static file.
 4. Make sure to update the Gradio Space URL in `api/predict.js` if you are using your own model.
+
+## Citation
+
+*Van Dinh, Co, and Son T. Luu*. ‘**Metadata Integration for Spam Reviews Detection on Vietnamese E-Commerce Websites**’. International Journal of Asian Language Processing, vol. 34, no. 01, World Scientific Pub Co Pte Ltd, Mar. 2024.
+
+[![https://doi.org/10.1142/s2717554524500024](https://zenodo.org/badge/DOI/10.1142/s2717554524500024.svg)](https://doi.org/10.1142/s2717554524500024)
