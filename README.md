@@ -65,17 +65,21 @@ export default async function handler(req, res) {
 }
 ```
 
-## Local Development
-Run this to install dependencies and start local server at http://localhost:3000
+
+## Deploying
+### Local
+First, clone this repo:
+
+```bash
+git clone https://github.com/HarryLee02/Vietnamese-spam-detection-model.git 
+```
+
+Run the command below to install dependencies and the server is up at http://localhost:3000
 ```bash
 npm install
 node app.js
 ```
-
-For API testing, change `/api/predict.js` logic in your own backend or deploy to Vercel.
-
-## Deploying to Vercel
-
+### Vercel
 Click this:
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FHarryLee02%2FVietnamese-spam-detection-model.git)
@@ -86,6 +90,21 @@ or follow the steps below:
 2. Connect the repo to Vercel (https://vercel.com/import).
 3. Vercel will auto-detect the API route in `api/predict.js` and serve `index.html` as a static file.
 4. Make sure to update the Gradio Space URL in `api/predict.js` if you are using your own model.
+
+### Docker
+I dockerized this app but have not tested it properly so feel free to open an issue if something goes wrong.
+
+After cloning this repo, make sure you also downloaded Docker. To verify, check the version:
+```bash
+docker --version
+# Docker version 27.3.1, build ce12230
+```
+Use this one-liner to build and start the dockerfile
+```bash
+docker compose up --build
+```
+
+If run correctly, the app will be up at http://localhost:3000
 
 ## Citation
 
