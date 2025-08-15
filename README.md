@@ -3,6 +3,9 @@
 ## Overview
 This repo contains only files that provide a simple web form for checking spam using a machine learning model API deployed at Hugging - Gradio Space.
 
+This model is a small part of a bigger project, which is in this [repo](https://github.com/HarryLee02/Reputation_Rating_with_Spam_Detection_for_Ecommerce_using_Blockchain_Network_and_Deep_Learning.git).
+
+
 The model itself is in another repo on [huggingface.co/HarryLee02](https://huggingface.co/spaces/HarryLee02/Vietnamese-spam-detection/tree/main)
 
 Live website is hosted at [https://vietnamese-spam-detection-model.vercel.app/](https://vietnamese-spam-detection-model.vercel.app/), but due to the fact that Hugging Face will turn off unactive models  around every 24 hours, I recommend using the Hugging Face link.
