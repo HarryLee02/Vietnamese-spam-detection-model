@@ -5,29 +5,43 @@ This repo contains only files that provide a simple web form for checking spam u
 
 The model itself is in another repo on [huggingface.co/HarryLee02](https://huggingface.co/spaces/HarryLee02/Vietnamese-spam-detection/tree/main)
 
+Live website is hosted at [https://vietnamese-spam-detection-model.vercel.app/](https://vietnamese-spam-detection-model.vercel.app/), but due to the fact that Hugging Face will turn off unactive models  around every 24 hours, I recommend using the Hugging Face link.
+
+**Demo no spam detected**
+
+![demo](./assets/demo_nospam.png)
+
+**Demo spam detected**
+
+![demo](./assets/demo_spam.png)
+
 ## Features
 
 The website contains minimal features since I only want to deploy my model. However, I was generous enough to add these:
-- **Detection**: This is the main purpose of the model, it takes `Vietnamese-only` input and return output
+- **Detection**: This is the main purpose of the model, it takes `Vietnamese` input and return output
 - **Language**: A dropdown menu to change between English - Vietnamese
 
 ## Model parameters
 
 *Will be updated later...*
 
-## How it works
+## How does it work
 - The form sends user input to a backend API route (`/api/predict`) via AJAX.
 - The backend API route uses the `@gradio/client` package to connect to Gradio Space and return the results.
 - The frontend displays the spam score and category returned by the model.
 
 ## Project Structure
-
 ```
 📦 Vietnamese-spam-detection-model
+├── 📁 assets
 ├── 📁 api
 │   └── 📄 predict.js
+├── 📄 .dockerignore
 ├── 📄 .gitignore
 ├── 📄 app.js
+├── 📄 compose.yaml
+├── 📄 Dockerfile
+├── 📄 favicon.ico
 ├── 📄 index.html
 ├── 📄 package.json
 ├── 📄 package-lock.json
